@@ -1,12 +1,19 @@
 <h1>
   {{ title }}
 </h1>
+
+<h2>
+  {{ config.description }}
+</h2>
+
 <p>
   {{ body }}
 </p>
 
 <hr>
 <div>
+  <users></users>
+  <widgets></widgets>
   <h2 class="text-error">Home: {{ message }}</h2>
   <form class="form-inline">
     <input type="text" [(ngModel)]="message" placeholder="Message" name="message">
